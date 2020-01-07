@@ -1,0 +1,493 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="text-white" style="background-color: black">
+  <canvas id="triangle"> </canvas>
+  <div class="container-fluid" style="background-color: black">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-10">
+         <div id="head" class="row"> 
+           <div class="col-12 Navbar">  
+               <div class="Navbar__Link Navbar__Link-brand">
+                  <h3 style="text-decoration: underline; text-decoration-color: yellow"> James Wenlock </h3> 
+                </div>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                  <h2> &#8801 </h2>
+                </div>
+              <nav class="Navbar__Items Navbar__Items--right">
+                <div class="Navbar__Link text-center">
+                  <div id="bio-btn" class="nav-btn inactive"> 
+                    <h5 class="Navbar__Text"> About </h5>
+                  </div>                   
+                </div>  
+                <div class="Navbar__Link text-center">
+                  <div id="projects-btn" class="nav-btn active"> 
+                    <h5 class="Navbar__Text"> Projects </h5>
+                  </div>                   
+                </div>
+                <div class="Navbar__Link text-center">
+                  <div id="sounds-btn" class="nav-btn inactive"> 
+                    <h5 class="Navbar__Text"> Sounds </h5>
+                  </div>                   
+                </div>                 
+                <div class="Navbar__Link text-center">
+                  <div id="resume-btn" class="nav-btn inactive"> 
+                    <h5 class="Navbar__Text"> CV </h5>
+                  </div>                   
+                </div>  
+                <div class="Navbar__Link text-center">
+                  <div id="contact-btn" class="nav-btn inactive"> 
+                    <h5 class="Navbar__Text"> Contact </h5>
+                  </div>                   
+                </div>                  
+              </nav>
+           </div>
+          </div>           
+        <div class="row">
+            <div id="bio-body" class="col-12 content">
+              <h4> About </h4>
+              <hr>
+              <div class="text-center">
+                <h1> Hello! </h1>
+                <img class="profile-pic " src="img/me.jpg">
+                <br> <br>
+                <h4> I'm James Wenlock </h4>
+              </div>
+              <br>                          
+              <p>
+                I'm a composer and software developer studying Digital Sound at the University of Washington. I'm passionate about sound, computers, and improving in small increments.
+                <br> <br>
+                Right now the dream is to develop creative audio applications professionally. Along the way, I'd like to go to cooking school, get my pilots license, build a school, and earn at least third place in a regional dance competition.
+              </p>
+              <p> 
+                On this website you'll find sounds I've made, projects I've worked, and other information about me.
+              </p>
+              <p> Thanks for stopping and have a great day!</p>
+            </div>
+          </div>             
+          <div class="row">
+            <div id="projects-body" class
+                 ="col-12 content">
+              <h4> Projects </h4>
+              <hr>
+              <div class="row">
+                <div class="col-md-4 col-1eft">
+                  <div class="row">
+                    <a target="_blank" href="https://video.vice.com/en_us/video/meet-the-doctor-turning-brain-waves-into-music/5a6fad77177dd4420159fc89">
+                        <div class="col-12 project">
+                        <p class="text-center project-title"> - Encephalophone - </p>
+                        <img class="img-fluid project-image" src="img/encephalophone.jpg">              
+                        <p class="project-body">Device that turns brainwaves into music</p>
+                      </div>
+                    </a>     
+                    <a target="_blank" href="https://github.com/JamesWenlock/Bartholomew">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - Batholomew - </p>
+                        <img class="img-fluid project-image" src="img/bartholomew.jpg">           
+                        <p class="project-body">Interactive sound sculpture that communicates via magnetism and vibration </p>
+                      </div>  
+                    </a>
+                    <a target="_blank" href="https://codepen.io/JamesWenlock/full/RgZPjz">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - Random Quote Generator - </p>
+                        <img class="img-fluid project-image" src="img/RandomQuote.png">           
+                        <p class="project-body"> Random Quote Machine built for the web </p>
+                      </div>  
+                    </a>                    
+                  </div>
+                </div> 
+                <div class="col-md-4 col-mid">
+                  <div class="row">
+                    <a target="_blank" href="https://github.com/JamesWenlock/AmbiVerbSC">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - AmbiverbSC - </p>
+                        <img class="img-fluid project-image" src="img/AmbiverbSC.png">              
+                        <p class="project-body">Ambisonic tank reverberator built in the SuperCollider programing language using the  the Ambisonic Toolkit</p>              
+                      </div> 
+                    </a>
+                    <a target="_blank" href="https://github.com/JamesWenlock/SimpleDelay">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - Simple Delay - </p>
+                        <img class="project-image img-fluid" src="img/simple-delay.png">              
+                        <p class="project-body">VST plugin written in C++ using juce for randomized delay </p>
+                      </div>
+                    </a>    
+                    <a target="_blank" href="https://drive.google.com/file/d/0B5vwT-84TnOGV2s0OVl1WWZwNjA/view">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - Look @ Me - </p>
+                        <img class="img-fluid project-image" src="img/Look%20At%20Me.png">            
+                        <p class="project-body">Digital ecosystem composed of randomly generated profile picture amalgamations </p>  
+                      </div>  
+                    </a>  
+                  </div>
+                </div>                  
+                <div class="col-md-4 col-right">
+                  <div class="row">
+                    <a target="_blank" href="https://madartseattle.com/exhibits/we-are-all-made-of-light/">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - We Are All Made of Light - </p>
+                        <img class="img-fluid project-image" src="img/Petric_opening7-by-MadArt-869x580.jpg">
+                        <p class="project-body"> Ambisonic composition for interactive light installation</p>  
+                      </div> 
+                    </a>  
+                    <a target="_blank" href="https://drive.google.com/drive/folders/1uS2EL6wLflp5H5zhFaoTI79UXHnE97eY?usp=sharing">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - PCE - </p>
+                        <img class="img-fluid project-image" src="img/PCE.png">
+                        <p class="project-body">Perpetually novel composing engine written in Supercollider</p>   
+                      </div>                     
+                    </a>
+                    <a  target="_blank" href="https://drive.google.com/file/d/0B5vwT-84TnOGX19QNFNJZkRtamc/view?usp=sharing">
+                      <div class="col-12 project">
+                        <p class="text-center project-title"> - Mirror Bot - </p>
+                        <img class="img-fluid project-image" src="img/bartholomew.png">
+                        <p class="project-body">Autonomous robotic mirror that actively hides from onlookers</p>
+                      </div>   
+                    </a>  
+                  </div>
+                </div>                  
+              </div>               
+            </div>
+          </div>  
+          <div class="row">
+            <div id="sounds-body" class="col-12 content">
+              <h4> Sounds </h4>
+              <hr>              
+              <div class="row">
+                <div class="col-md-4 col-left">
+                  <div class="row">
+                    <div class="col-12 project">
+                      <p class="text-center project-title"> - Three Changes - </p>
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/threeChangesStereo.mp3"> 
+                      </audio>                    
+                      <p class="project-body sound-body"> Electro acoustic piece for Holographic Higher Order Ambisonic</p>   
+                    </div> 
+                    <div class="col-12 project">
+                      <p class="text-center project-title"> - Composition 1 - </p>
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/Composition1.mp3"> 
+                      </audio>                    
+                      <p class="project-body sound-body"> Electroacoustic piece expanding upon compositional ideas and techniques found in Jean Claude Risset's Mutations </p>
+                    </div>                     
+                  </div>                  
+                </div>
+                <div class="col-md-4 col-mid">
+                  <div class="row">
+                    <div class="col-12 project">
+                      <p class="text-center project-title"> - Hard Disk Noise - </p>
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/hardDiskNoise.mp3"> 
+                      </audio>                    
+                      <p class="project-body sound-body"> An Avant-Garde sound world inspired by Georgy Ligeti's work</p>   
+                    </div> 
+                    <div class="col-12 project">
+                      <p class="text-center project-title"> - Risset Etudes - </p>
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/Wenlock_etude_1.mp3"> 
+                      </audio> 
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/Wenlock_etude_2.mp3"> 
+                      </audio>    
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src= "snd/Wenlock_etude_3.mp3"> 
+                      </audio>                          
+                      <p class="project-body sound-body"> Three pastiche electroacoustic compositions emulating the early work of Jean Claude Risset</p>   
+                    </div>                        
+                  </div>
+                </div>     
+                <div class="col-md-4 col-right">
+                  <div class="row">
+                    <div class="col-12 project">
+                      <p class="text-center project-title"> - Jonty Etude - </p>
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/Texture_2.mp3"> 
+                      </audio>                    
+                      <p class="project-body sound-body"> A small etude inspired by Jonty Harrison's Klang </p>
+                    </div> 
+                    <div class="col-12 project">
+                      <p class="text-center project-title"> - Contemporary Sample - </p>
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/contemporarySample.mp3"> 
+                      </audio>                    
+                      <p class="project-body sound-body"> A small section from a personal project </p>
+                    </div>  
+                    <div class="col-12 project">
+                      <p class="text-center project-title"> - Laughter 2.0 - </p>
+                      <audio class="sound-file embed-responsive-item" controls controlsList="nodownload" src="snd/Texture_1.mp3"> 
+                      </audio>                    
+                      <p class="project-body sound-body"> Experiment using children's laughter and lots of bandpasses </p>
+                    </div>                       
+                  </div>
+                </div>                  
+              </div>
+            </div>
+          </div>       
+          <div class="row">
+            <div id="contact-body" class="col-12 content">
+              <h4> Contact </h4>
+              <hr>
+              <div class="text-center">
+                <p class="cv-border contact-btn git">               <a href="https://github.com/JamesWenlock" target="_blank"> GitHub </a> </p>   
+                <p class="cv-border contact-btn linked" > <a href="https://www.linkedin.com/in/james-wenlock-6a2b89108/" target="_blank">  LinkedIn </a> </p>      
+                <p class="cv-border contact-btn email"> email: wenloj@uw.edu </p>
+                <p class="cv-border contact-btn phone" > phone: (253)961-2385 </p>
+              </div>
+            </div>
+          </div> 
+          <div class="row">
+            <div id="resume-body" class="col-12 content">
+              <h4> CV </h4>
+              <hr>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-12 education">
+                      
+                      <h5 class="cv-content cv-top cv-border text-center">Education</h5>
+                      <div class="cv-border cv-body-top cv-content">
+                        <p>University of Washington, Seattle WA</p>
+                        <p> Major: Computational Auricular Acoustics</p>
+                        <p> Minor: Digital Arts</p>
+                        <p> Class: 2020 | GPA: 3.72 </p>
+                      </div>
+                    </div>   
+                    <div class="col-12 education">
+                      <h5 class="cv-content cv-top cv-border text-center"> Relevant Coursework </h5>
+                      <div class="cv-border cv-body-top cv-content">
+                      <p> Sound in Space | DXARTS 567 </p>
+                      <p> Digital Sound | DXARTS 460, 461, 462 </p>                      
+                      <p> Mechatronics | DXARTS 470, 471, 472 </p>  
+                      <p> Computer Programming | CSE 142, 143 </p> 
+                      <p> Data Structures and Algorithms | CSE 373 </p>
+                      <p> Programming Concepts and Tools | CSE 374 </p>       
+                      <p> Nature of Sound | SPHSC 261 </p> <p> Hearing Science | SPHSC 461 </p>         
+                      </div>
+                    </div>                        
+                    <div class="col-12 press">
+                      <h5 class="cv-border cv-top text-center"> Press</h5>
+                      <div class="cv-border cv-body-top cv-content">  
+                        <a target="_blank" href="https://www.seattletimes.com/entertainment/music/brain-music-encephalophone-neurology-university-washington-dxarts/">
+                          <p> 
+                            <u>
+                              Seattle Times: Meet the Encephalophone
+                            </u> 
+                          </p>
+                        </a>
+                        <a target="_blank" href="https://news.vice.com/en_us/article/xw5zn7/this-instrument-turns-brain-waves-into-music">
+                          <p> 
+                            <u>
+                              Vice: This instrument turns brainwaves into music
+                            </u> 
+                          </p>
+                        </a>  
+                        <a target="_blank" href="
+https://www.thestranger.com/slog/2018/10/15/33930419/this-trippy-light-installation-is-like-bei ng-inside-carl-sagans-brain">
+                          <p> 
+                            <u>
+                              The Stranger: Trippy Light Installation is Like Being Inside Carl Sagan's Brain
+                            </u> 
+                          </p>
+                        </a> 
+                        <a target="_blank" href="https://www.cityartsmagazine.com/maja-petrics-installation-at-madart-transports-us-to-the-stars/">
+                          <p> 
+                            <u>
+                              City Arts Magazine: Maja Petric's installation at madart transports us to the stars
+                            </u> 
+                          </p>
+                        </a> 
+                        <a target="_blank" href="https://www.dr.dk/tv/se/simons-superkraefter/simons-superkraefter-2/simons-superkraefter-ta nkens-kraft#!/">
+                          <p> 
+                            <u>
+                              DR1: Simon's Superpowers 
+                            </u> 
+                          </p>
+                        </a>
+                        <a target="_blank" href="https://www.thestranger.com/events/39563627/machines-of-survival">
+                          <p> 
+                            <u>
+                              The Stranger: Machines of Survival
+                            </u> 
+                          </p>
+                        </a>                           
+                      </div>
+                    </div>  
+                    
+                    <div class="col-12 skills">
+                      <h5 class="cv-top cv-content cv-border text-center"> Skills </h5>
+                      <div class="cv-border cv-body-top cv-content">
+                        <p class="text-center skill-head"> - Software (Adept) - </p>
+                        <hr>
+                        <p><i>Supercollider, Reaper, Ambisonic Toolkit (ATK), Java, Arduino, Processing, Adobe Audition, Fl Studios</i></p>
+                      </div>
+                      <div class="cv-border cv-content">     
+                        <p class="text-center skill-head"> - Software (Familiar) - </p>
+                        <hr>                        
+                        <p><i>C, Linux, Bash, C++, Python, GitHub, HTML5, CSS, JQuery, Javascript, Bootstrap, Matlab, EEGStudio, Photoshop, Pixlr, Digital Performer, Logic, Pro Tools, Audio Finder, Final Cut, Ableton Live, Lightroom, Aperture, Photokey 8 </i> </p>   
+                      </div>  
+                      <div class="cv-border cv-content">  
+                        <p class="text-center skill-head"> - Digital Signal Processing - </p>
+                        <hr>                        
+                        <p> <i>Stereo Imaging, Ambisonics, FM/AM Synthesis, Delay Lines, Reverb Structure, Additive/Subtractive/Granular Synthesis, Time Segment Processing, Filter Design</i></p> 
+                      </div>                        
+                  </div> 
+                </div>
+                </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-12 Micelaneous">
+                      <h5 class="cv-content cv-top cv-border text-center">Miscellaneous</h5>
+                      <div class="cv-border cv-body-top cv-content">
+                        <a target="_blank" href="https://vdt-icsa.de/competition/">
+                          <p> 
+                            <u>
+                              Europe's Third International Spatial Audio Competition
+                            </u> 
+                          </p>
+                        </a> 
+                        <a target="_blank" href="https://drive.google.com/file/d/1FzX3ryLPYXRzFtdWJYgiqj8DB2ASIbT0/view?usp=sharing">
+                          <p> 
+                            <u>
+                              Cambient: Ambient Camping
+                            </u> 
+                          </p>
+                        </a>                            
+                        <a target="_blank" href="https://www.law.washington.edu/reg/new-music/new-music-ecosystem-agenda.pdf">
+                          <p> 
+                            <u>
+                              The New Music Ecosystem
+                            </u> 
+                          </p>
+                        </a>
+                        <a target="_blank" href="https://expo.uw.edu/expo/apply/446/proceedings/result?format=pdf&mentor_name=Joseph%2C+Ralina">
+                          <p> 
+                            <u>
+                              Undergraduate Research Symposium
+                            </u> 
+                          </p>
+                        </a>
+                        <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S8755461518300379">
+                          <p> 
+                            <u>
+                              User-Centered Design In and Beyond the Classroom: Toward an Accountable Practice
+                            </u> 
+                          </p>
+                        </a>
+                        <a target="_blank" href="https://dxarts.washington.edu/events/2017-11-15/aes-event-ambisonics-atk-dxarts">
+                          <p> 
+                            <u>
+                              Ambisonics and the ATK
+                            </u> 
+                          </p>
+                        </a> 
+                        <a target="_blank" href="https://dxarts.washington.edu/events/2019-02-28/music-today-dxarts-until-spring">
+                          <p> 
+                            <u>
+                              Music of Today - Until Spring
+                            </u> 
+                          </p>
+                        </a> 
+                        <a target="_blank" href="https://music.washington.edu/events/2019-04-19/music-today-performing-brain">
+                          <p> 
+                            <u>
+                              Music of Today - Performing with the Brain
+                            </u> 
+                          </p>
+                        </a>                        
+                      </div>
+                    </div>                      
+                  <div class="col-12 experience">
+                    <h5 class="cv-top cv-content cv-border text-center">Experience</h5>
+                    <div class="cv-body-top cv-content cv-border"> 
+                      <p>DreamWorks, Eagle Rock CA <br>
+                        <i> Assistant to Composer </i>
+                      </p>
+                      <p> July 2016 - May 2017 </p>
+                      <p> Worked under Robert Watson on DreamWork's Netflix series, Veggie Tales: In The City</p>
+                    </div>
+                    <div class="cv-border cv-content"> 
+                      <p>Center for Digital Art and Experimental Media <br> University of Washington <br>
+                        <i> Teaching Assistant </i>
+                      </p>
+                      <p> September 2017 - Present </p>
+                      <p> Teacher's assistant for the digital sound series (DXARTS 460, 461, 462) at the University of Washington </p>  
+                    </div>  
+                    <div class="cv-border cv-content"> 
+                      <p>1000 Words Events, Tacoma WA<br>
+                        <i> Photobooth Technician</i>
+                      </p>
+                      <p> June 2017 - Present </p>
+                      <p> Setup, teardown, and operation of various booths, adept knowledge and usage of current digital imaging technologies </p>
+                    </div>                       
+                    <div class="cv-border cv-content"> 
+                      <p>Banya 5, Seattle WA <br>
+                        <i> Spa Attendant </i>
+                      </p>
+                      <p> August 2018 - Present </p>
+                      <p> Maintain facities, provide customer support, and build software at the Banya 5 Urban Spa</p>
+                    </div>   
+                    <div class="cv-border cv-content"> 
+                      <p>UW Recreation, University of Washington <br>
+                        <i> Mindfulness Assistant </i>
+                      </p>
+                      <p> January 2018 - March 2019 </p>
+                      <p> Assistant for UW mindfulness program - a service which provides year round yoga and meditation classes to students and faculty. Responsibilities include tabling, record keeping, and activity coordination for events in support of the program</p>
+                    </div>
+                    <div class="cv-border cv-content">
+                       <p>Broadway Center, Tacoma WA <br>
+                        <i> Sales Associate </i>
+                      </p>
+                      <p> July 2015 - August 2015 </p>
+                      <p> Part of the 2015 Broadway Center seasonal campaign raising funds in support of the arts in the Tacoma region. Provided tickets, information, and memberships to Broadway Center patrons </p>   
+                    </div>                    
+                    <div class="cv-border cv-content">
+                       <p>Northwest Folklife, Seattle WA <br>
+                        <i> Roving Assistant </i>
+                      </p>
+                      <p> June 2018 - June 2019 </p>
+                      <p> Collected/processed donation and provided customer support at 2018 folklife festival. </p>   
+                    </div>                    
+                  </div>
+                  
+                </div>  
+              </div>                  
+            </div>
+          </div>          
+        </div>
+    </div>
+  </div>
+  
+  
+  <!-- Scripts -->
+  
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+<script src="js/triangle.js"></script>    
+
+
+</html>
