@@ -1,2 +1,0 @@
-# JamesWenlock.github.io
-website
