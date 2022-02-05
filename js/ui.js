@@ -129,11 +129,11 @@ links.linkedin.g.click = function () {
 }
 
 links.git.g.click = function () {
-  window.open("https://www.linkedin.com/in/james-wenlock");
+  window.open("https://github.com/JamesWenlock");
 }
 
 cv.g.click = function () {
-  window.open("Wenlock_CV_2020.pdf")
+  window.open("Wenlock_CV_2022.pdf")
 }
 
 sndCtrl.g.click = function (e) {
